@@ -162,7 +162,7 @@ EOF
         --reloadcmd  "systemctl force-reload  nginx.service"
 	if test -s /usr/src/trojan-cert/fullchain.cer; then
         cd /usr/src
-  #下载 Trojan 服务器
+        #下载 Trojan 服务器
 	wget https://github.com/trojan-gfw/trojan/releases/download/v1.14.1/trojan-1.14.1-linux-amd64.tar.xz
 	tar xf trojan-1.*
 	#下载trojan客户端
