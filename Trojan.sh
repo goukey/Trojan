@@ -170,8 +170,7 @@ EOF
 	cd /usr/share/nginx/html/
 	wget https://github.com/atrandys/v2ray-ws-tls/raw/master/web.zip
     	unzip web.zip
-	systemctl start nginx
-	sleep 5
+	systemctl restart nginx.service
 	#申请https证书
 	mkdir /usr/src/trojan-cert /usr/src/trojan-temp
 	curl https://get.acme.sh | sh
