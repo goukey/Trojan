@@ -12,4 +12,4 @@ Trojan 一键安装自动脚本
 
 脚本安装命令
 
-bash <(curl -s -L https://github.com/goukey/Trojan/blob/master/Trojan.sh)
+bash <(curl -s -L https://github.com/goukey/Trojan/raw/master/Trojan.sh)
