@@ -127,7 +127,7 @@ $systemPackage -y install  nginx wget unzip zip curl tar >/dev/null 2>&1
 systemctl enable nginx
 systemctl stop nginx
 green "======================="
-blue "请输入绑定到本VPS的域名"
+yellow "请输入绑定到本VPS的域名"
 green "======================="
 read your_domain
 real_addr=`ping ${your_domain} -c 1 | sed '1{s/[^(]*(//;s/).*//;q}'`
@@ -300,7 +300,7 @@ EOF
 	green "======================================================================"
 	green "Trojan已安装完成，请使用以下链接下载trojan客户端，此客户端已配置好所有参数"
 	green "1、复制下面的链接，在浏览器打开，下载客户端，注意此下载链接将在1个小时后失效"
-	blue "http://${your_domain}/$trojan_path/trojan-cli.zip"
+	yellow "http://${your_domain}/$trojan_path/trojan-cli.zip"
 	green "2、将下载的压缩包解压，打开文件夹，打开start.bat即打开并运行Trojan客户端"
 	green "3、打开stop.bat即关闭Trojan客户端"
 	green "4、Trojan客户端需要搭配浏览器插件使用，例如switchyomega等"
@@ -324,8 +324,8 @@ fi
 
 function repair_cert(){
 green "======================="
-blue "请输入绑定到本VPS的域名"
-blue "务必与之前失败使用的域名一致"
+yellow "请输入绑定到本VPS的域名"
+yellow "务必与之前失败使用的域名一致"
 green "======================="
 read your_domain
 real_addr=`ping ${your_domain} -c 1 | sed '1{s/[^(]*(//;s/).*//;q}'`
