@@ -168,7 +168,7 @@ EOF
 	#设置伪装站
 	rm -rf /usr/share/nginx/html/*
 	cd /usr/share/nginx/html/
-	wget https://github.com/goukey/Trojan/raw/master/web.zip
+	wget https://github.com/atrandys/v2ray-ws-tls/raw/master/web.zip
     	unzip web.zip
 	systemctl start nginx
 	sleep 5
