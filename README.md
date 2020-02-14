@@ -10,7 +10,5 @@ Trojan 一键安装自动脚本
 ====================================
 
 脚本安装命令
-第一步：
-bash <(curl -s -L https://github.com/atrandys/trojan/raw/master/trojan_mult.sh)
-第二步：
-bash <(curl -s -L https://github.com/chiakge/Linux-NetSpeed/raw/master/tcp.sh)
+
+bash <(curl -s -L https://github.com/goukey/Trojan/raw/master/Trojan.sh)
