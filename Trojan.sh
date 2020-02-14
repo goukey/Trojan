@@ -168,7 +168,7 @@ EOF
 	#设置伪装站
 	rm -rf /usr/share/nginx/html/*
 	cd /usr/share/nginx/html/
-	wget https://github.com/atrandys/v2ray-ws-tls/raw/master/web.zip
+	wget https://github.com/goukey/Trojan/raw/master/web.zip
     	unzip web.zip
 	systemctl restart nginx.service
 	#申请https证书
@@ -301,9 +301,12 @@ EOF
 	green "Trojan已安装完成，请使用以下链接下载trojan客户端，此客户端已配置好所有参数"
 	green "1、复制下面的链接，在浏览器打开，下载客户端，注意此下载链接将在1个小时后失效"
 	yellow "http://${your_domain}/$trojan_path/trojan-cli.zip"
+	red "请记录下面规则网址"
+	yellow "http://${your_domain}/trojan.txt"
 	green "2、将下载的压缩包解压，打开文件夹，打开start.bat即打开并运行Trojan客户端"
 	green "3、打开stop.bat即关闭Trojan客户端"
 	green "4、Trojan客户端需要搭配浏览器插件使用，例如switchyomega等"
+	green "访问  https://www.v2rayssr.com/trojan-1.html  下载 浏览器插件 及教程"
 	green "======================================================================"
 	else
         red "==================================="
