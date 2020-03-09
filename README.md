@@ -11,4 +11,6 @@ Trojan 一键安装自动脚本
 
 脚本安装命令
 
+apt-get update -y && apt-get install curl -y
+apt-get install xz-utils
 bash <(curl -s -L https://github.com/goukey/Trojan/raw/master/Trojan.sh)
